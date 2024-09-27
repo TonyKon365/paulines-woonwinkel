@@ -1,0 +1,12 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - ExtendSiteConfig
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - app/css/backend-fix.css

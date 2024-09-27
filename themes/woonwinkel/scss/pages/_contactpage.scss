@@ -1,0 +1,72 @@
+#contactMap {
+
+    iframe {
+        width: 100%;
+        height: 75%;
+        margin-top: 5%;
+    }
+}
+
+#FlowUs {
+
+    .icon {
+        float: left;
+        font-size: 1.7rem;
+        margin: 0 1%;
+    }
+    .icon:first-of-type {
+        margin-left: 0;
+    }
+    a {
+        color: black;
+    }
+}
+
+#openingHours {
+    table td {
+        vertical-align: top;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #contactForm {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+#contactForm {
+    h2 {
+        display: block;
+        width: 100%;
+    }
+}
+#Form_ContactForm {
+  display: block;
+  width: 75%; 
+  margin: 3% 0 6%;
+
+  input[type=text],
+  input[type=email] {
+      margin-bottom: 10%;
+      font-size: 0.9rem;
+      outline-color: $bordeaux;
+  }
+  textarea {
+      outline-color: $bordeaux;
+  }
+  .button {
+    padding: 1% 5%;
+  }
+  #Form_ContactForm_Privacy_Holder {
+      float: left;
+      
+  }
+  #privacyText, #Form_ContactForm_Privacy_Holder {
+    margin: 2.5% 0;
+    display: block;
+  }
+}
+#mainContact {
+    padding: 5% 0;
+}

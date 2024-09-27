@@ -1,0 +1,18 @@
+.OrderForm, .MoreInfoForm {
+    margin: 5vh 0;
+
+    form {
+        width: 75%;
+    }
+    .row {
+        margin: 1% 0;
+    }
+
+    input[type=text], input[type=email] {
+        padding: 12px 20px;
+    }
+
+    input[type=submit] {
+        margin-top: 3.5%;
+    }
+}

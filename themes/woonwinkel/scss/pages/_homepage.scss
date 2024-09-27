@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+#about {
+    padding-bottom: 0;
+    width:100%;
+
+    .button {
+        float: right;
+    }
+}
+
+#unique {
+    padding-top: 0;
+
+
+    .button {
+        margin: 0 auto 5%;
+        display: block;
+        width: fit-content;
+    }
+
+}
+
+#homepageSlider {
+    height: 50vh;
+
+    .swiper-slide {
+        position: relative;
+    }
+    .sliderText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 3;
+
+    }
+    .sliderImage {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .sliderOverlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($dark, 0.5);
+        z-index: 2;
+    }
+}

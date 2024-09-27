@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+.subcategoryOverlay {
+    background-color: $dark;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+.subcategoryText {
+    z-index: 3;
+    position: absolute;
+    color: white;
+    transition: opacity 0.3s;
+    text-align: center;
+    span {
+        display: none;
+        text-align: center;
+    }
+    @include media-breakpoint-up(md) {
+        bottom: 2.5%;
+        left: 2%;
+        text-align: center;
+    }
+}
+.subcategoryOverlayImage {
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

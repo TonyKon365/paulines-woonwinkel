@@ -1,0 +1,5 @@
+ContentPage:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+  disallowed_elements:
+    - DNADesign\Elemental\Models\ElementContent

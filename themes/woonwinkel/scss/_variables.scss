@@ -1,0 +1,19 @@
+// Colors
+$bordeaux: #C40030;
+$dark: #222222;
+
+// Other
+$colWidth: 100% / 12;
+
+// Fonts
+$defaultFont: "Gotham";
+$boldFont: "Gotham-bold";
+
+@font-face {
+    font-family: $defaultFont;
+    src: url('../font/Gotham.otf');
+}
+@font-face {
+    font-family: $boldFont;
+    src: url('../font/Gotham-bold.otf');
+}

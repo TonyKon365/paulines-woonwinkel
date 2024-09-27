@@ -1,0 +1,20 @@
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+@mixin animation($name, $duration, $options) {
+    animation: $name $duration, $options;
+    -webkit-animation: $name $duration, $options;
+}
+
+@mixin position($type) {
+  position: -webkit-$type;
+  position: $type;
+}
+
+@mixin box-shadow($hlenght, $vlenght, $blur, $spread, $color) {
+  -webkit-box-shadow: $hlenght $vlenght $blur $spread $color;
+  -moz-box-shadow: $hlenght $vlenght $blur $spread $color;
+  box-shadow: $hlenght $vlenght $blur $spread $color;
+}

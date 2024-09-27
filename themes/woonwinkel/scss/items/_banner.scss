@@ -1,0 +1,44 @@
+.banner {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    
+    @include media-breakpoint-down(sm) {
+        width: 100vw;
+    }
+}
+.bannerOverlay {
+    background-color: $dark;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.bannerText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    
+    h2 {
+        margin-bottom: 5%;
+    }
+}

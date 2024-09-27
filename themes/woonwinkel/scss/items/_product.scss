@@ -1,0 +1,75 @@
+.product {
+    position: relative;
+    padding: 7.5%;
+    width: 100%;
+    margin-top: 10%;
+
+    @include box-shadow(0, 0, 15px, 0, rgba(black, 0.07));
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    .productImage {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .productText {
+        text-align: center;
+        margin-top: 5%;
+        display: block;
+        min-height: 15vh;
+        
+        p {
+            font-family: $boldFont;
+            font-size: 1.2em;
+        }
+        button {
+            display: block;
+            margin: 5px auto;
+            width: 80%;
+            padding: 3% 0;
+            bottom: 0;
+        }
+        .productPriceHolder {
+            font-size: 1.1rem;
+        }
+        .productCurrentPrice {
+            font-family: $boldFont;
+        }
+    }
+
+    &.productSale {
+        .productSalePrice {
+            font-family: $boldFont;
+        }
+        .productPrice {
+            text-decoration: line-through;
+            font-size: 80%;
+        }
+    }
+    .productSaleLabel {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        background-color: $bordeaux;
+        color: white;
+        text-transform: uppercase;
+        padding: 3% 10%;
+        
+    }
+}
+
+
+form#Form_OrderForm, form#Form_MoreInfoForm {margin:0 auto; }
+.MoreInfoForm h2, .OrderForm h2 {text-align:center}
